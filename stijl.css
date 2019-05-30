@@ -10,7 +10,7 @@ header {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  background-attachment: initial;
+
 }
 
 
@@ -129,7 +129,7 @@ main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-attachment: initial;
+
 
 }
 
@@ -392,7 +392,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-attachment: initial;
+
 
 }
 
