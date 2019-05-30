@@ -129,6 +129,7 @@ main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-attachment: initial;
 
 }
 
@@ -391,6 +392,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-attachment: initial;
 
 }
 
