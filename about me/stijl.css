@@ -1,0 +1,737 @@
+.onzichtbaar {
+      opacity: 0;
+}
+
+header {
+  background-image: url(header.png);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+
+}
+
+.ik {
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+  background-image: url(me.png);
+  background-size: cover;
+  background-position: center;
+
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+
+}
+
+
+header h1 {
+  font-size: 17.5vw;
+  font-family: 'Limelight', cursive;
+  position: absolute;
+  top: 18vh;
+  color: #bcdaac;
+  right: 1vw;
+  opacity: 0.8;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+.tekst {
+  z-index: 2;
+}
+ header p {
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+   position: absolute;
+   right: 7vw;
+   top: 25.5vh;
+   font-size: 4.5vw;
+   opacity: 0;
+   text-align: right;
+   width: 40vw;
+   animation-name: fadein;
+   animation-delay: 1.5s;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+
+ }
+
+ .pijlscroll {
+   position: absolute;
+   bottom: 0;
+
+   text-align: center;
+   width: 100%;
+   transition: opacity 2s;
+   animation-name: bounce;
+   animation-duration: 2.5s;
+   animation-iteration-count: infinite;
+   z-index: 4;
+ }
+
+ .pijlscroll img {
+ margin-top: 1rem;
+ height: 5rem;
+
+ }
+
+ @keyframes bounce{
+   0% {
+     transform:  translate(0,0)  ;
+   }
+   15% {
+     transform:  translate(0,-0.8rem)  ;
+   }
+   30% {
+     transform:  translate(0,0)  ;
+   }
+   45% {
+     transform:  translate(0,-0.6rem)  ;
+   }
+   60% {
+     transform:  translate(0,0)  ;
+   }
+   75% {
+     transform:  translate(0px,-0.3rem)  ;
+   }
+   100% {
+     transform:  translate(0,0)  ;
+   }
+ }
+
+
+/* main */
+
+main div {
+  height: auto;
+  position: relative;
+}
+
+main {
+  height: auto;
+}
+
+main h1 {
+  font-size: 20rem;
+  font-family: 'Limelight', cursive;
+  text-align: center;
+
+}
+
+main p {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  font-size: 1.5rem;
+  width: 100%;
+  position:  relative;
+  z-index: 2;
+  padding: 0.5rem 6rem;
+
+  mix-blend-mode: overlay;
+}
+
+.een h1 , .drie h1  {
+  position: absolute;
+  color: #98456e;
+  opacity: 0.7;
+  top:2rem;
+
+}
+
+
+.een {
+  padding-top: 15rem;
+  margin-top: 3rem;
+  margin-bottom: 18rem;
+}
+
+.twee h1 {
+  color: #bcdaac;
+  font-size: 10rem;
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+}
+
+.twee {
+  position: relative;
+  padding-top: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+}
+
+
+.drie h1 {
+  font-size: 8rem;
+  color: #737d98;
+
+}
+
+.drie {
+  padding-top: 7rem;
+  margin-top: 18rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 10rem;
+}
+
+.een, .twee, .drie{
+  transition: opacity 1.5s;
+}
+
+/* Footer */
+
+footer {
+  background-image:url(footer.png);
+  height: 200vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+
+.quote h2 {
+  font-size: 4.5rem;
+  padding: 16rem 4rem;
+  background-color: #bcdaac;
+   mix-blend-mode: screen;
+   font-family: 'Limelight', cursive;
+   height: auto;
+   width: 100%;
+   z-index: 1;
+
+}
+
+.Contact {
+  height: 55vh;
+}
+
+.blokje {
+  background-color: white;
+  height: 25rem;
+  width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50vh;
+  position: relative;
+  border: 1rem solid #bcdaac;
+
+}
+
+   a {
+    text-decoration: none;
+    color: #737d98;
+  }
+
+  .socialemedia {
+    position: absolute;
+    bottom: 1.6rem;
+    left: 3.3rem;
+  }
+
+.socialemedia img {
+  width: 5.5rem;
+}
+
+
+
+
+.blokje h2 {
+  position: absolute;
+   font-family: 'Limelight', cursive;
+   font-size: 6.5rem;
+   top: 2rem;
+   color: #bcdaac;
+   left: 1.8rem;
+
+}
+
+.blokje h3 {
+  position: absolute;
+
+   font-size: 4rem;
+   color: #f17cbd;
+   font-family: 'Montserrat', sans-serif;
+   top: 5.5rem;
+   mix-blend-mode: multiply;
+   left: 6rem;
+
+}
+
+.link {
+  position: absolute;
+  color: #f17cbd;
+  font-family: 'Montserrat', sans-serif;
+  bottom: 9.3rem;
+    left: 6rem;
+    font-size: 1.8rem;
+      text-align: center;
+}
+
+.link a { text-decoration: underline;
+        font-size: 1.5rem;
+
+}
+
+.link a:hover {
+  color: #98456e;
+
+}
+
+span {
+  display: block;
+}
+b {
+  display: block;
+  padding-left: 15rem;
+}
+
+
+
+
+/* Menu */
+
+
+.begin:nth-child(1) {
+  background-color: #f17cbd;
+  height: 100vh;
+  grid-column: 1/9;
+  grid-row: 1/17;
+  animation-name: expandX;
+  animation-delay: 2s;
+  animation-duration: 0.4s;
+  transform-origin: right;
+  transform: scaleX(0);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  background-image: url(achtergrond.jpg);
+  background-size: cover;
+  background-blend-mode: screen;
+
+}
+
+.begin:nth-child(2) {
+  background-color: #98456e;
+  grid-row: 9/17;
+  grid-column: 9/17;
+  animation-name: expandY;
+  animation-delay: 1.6s;
+  animation-duration: 0.4s;
+  transform-origin: top;
+  transform: scaleY(0);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  background-image: url(ik.jpg);
+  background-size: cover;
+  background-blend-mode: screen;
+
+}
+
+.begin:nth-child(3) {
+  background-color: #bcdaac;
+  grid-row: 1/9;
+  grid-column: 9/13;
+  animation-name: expandX;
+  animation-delay: 1.2s;
+  animation-duration: 0.4s;
+  transform-origin: right;
+  transform: scaleX(0);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.begin:nth-child(4) {
+
+  background-color: #737d98;
+  grid-row: 4/9;
+  grid-column: 13/17;
+  animation-name: expandY;
+  animation-delay: 0.8s;
+  animation-duration: 0.4s;
+  transform-origin: top;
+  transform: scaleY(0);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+
+}
+
+.begin:nth-child(5) {
+  background-color: #f17cbd;
+  grid-row: 1/4;
+  grid-column: 13/15;
+  animation-name: expandX;
+  animation-delay: 0.4s;
+  animation-duration: 0.4s;
+  transform-origin: right;
+  transform: scaleX(0);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0.95;
+}
+
+.begin:nth-child(6) {
+  background-color: #98456e;
+  grid-column: 15/17;
+  grid-row: 1/4;
+  animation-name: expandX;
+  animation-duration: 0.4s;
+  transform-origin: right;
+  animation-timing-function: linear;
+}
+
+.begin:nth-child(7){
+  background-color: #bcdaac;
+  grid-column: 15/17;
+  grid-row: 3/4;
+  animation-name: expandX;
+  animation-duration: 0.4s;
+  transform-origin: top right;
+  animation-timing-function: linear;
+
+
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+#menu a:hover {
+  color:  #98456e;
+  transition: 1s;
+}
+
+
+
+
+
+
+@keyframes expandX {
+  0% { transform: scaleX(0);
+
+  }
+
+  100% {
+    transform: scaleX(1);
+
+  }
+
+}
+
+
+@keyframes expandY {
+  0% { transform: scaleY(0);
+
+  }
+
+  100% {
+    transform: scaleY(1);
+
+  }
+
+}
+
+.weg:nth-child(1) {
+  background-color: #f17cbd;
+  height: 100vh;
+  grid-column: 1/9;
+  grid-row: 1/17;
+  transform: scale(1);
+  animation-name: expandXWeg;
+  animation-delay: 2s;
+  animation-duration: 0.4s;
+  transform-origin: left;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  background-image: url(achtergrond.jpg);
+  background-size: cover;
+  background-blend-mode: screen;
+
+
+
+}
+
+.weg:nth-child(2) {
+  background-color: #98456e;
+  grid-row: 9/17;
+  grid-column: 9/17;
+  transform: scale(1);
+  animation-name: expandYWeg;
+  animation-delay: 1.6s;
+  animation-duration: 0.4s;
+  transform-origin: bottom;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  background-image: url(ik.jpg);
+  background-size: cover;
+  background-blend-mode: screen;
+
+
+}
+
+.weg:nth-child(3) {
+  background-color: #bcdaac;
+  grid-row: 1/9;
+  grid-column: 9/13;
+  transform: scale(1);
+  animation-name: expandXWeg;
+  animation-delay: 1.2s;
+  animation-duration: 0.4s;
+  transform-origin: left;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  z-index: 100;
+}
+
+.weg:nth-child(4) {
+  background-color: #737d98;
+  grid-row: 4/9;
+  grid-column: 13/17;
+  transform: scale(1);
+  animation-name: expandYWeg;
+  animation-delay: 0.8s;
+  animation-duration: 0.4s;
+  transform-origin: bottom;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+
+}
+
+.weg:nth-child(5) {
+  background-color: #f17cbd;
+  grid-row: 1/4;
+  grid-column: 13/15;
+  animation-name: expandXWeg;
+  animation-delay: 0.4s;
+  animation-duration: 0.4s;
+  transform-origin: left;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  transform: scale(1);
+    opacity: 0.95;
+
+}
+
+.weg:nth-child(6) {
+  background-color: #98456e;
+  grid-column: 15/17;
+  grid-row: 1/4;
+  transform: scale(1);
+  animation-name: expandXWeg;
+  animation-duration: 0.4s;
+  transform-origin: left;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+
+}
+
+.weg:nth-child(7){
+  background-color: #bcdaac;
+  grid-column: 15/17;
+  grid-row: 3/4;
+  transform: scale(1);
+  animation-name: expandXWeg;
+  animation-duration: 0.4s;
+  transform-origin: left;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+
+@keyframes expandXWeg {
+  0% { transform: scaleX(1);
+    z-index: 100;
+
+
+  }
+
+  100% {
+    transform: scaleX(0);
+      z-index: 0;
+
+
+  }
+
+}
+
+
+@keyframes expandYWeg {
+  0% { transform: scaleY(1);
+    z-index: 100;
+
+
+
+  }
+
+  100% {
+    transform: scaleY(0);
+      z-index: 0;
+
+
+  }
+
+}
+
+.vakje a {
+  display: none;
+}
+
+.begin a {
+  display: block;
+}
+.weg a {
+  display: block;
+}
+
+.zindex {
+  z-index: 100;
+}
+
+.zindexweg {
+  z-index: 100;
+  animation-name: zindex;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes zindex {
+  99% {
+    z-index: 100;
+  }
+  100% {
+
+    z-index: 0;
+  }
+
+}
+
+#menu a {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+text-align: center;
+font-size: 2rem;
+width: inherit;
+height: inherit;
+padding: 2rem;
+padding-top: 22vh;
+
+
+
+}
+
+.begin:nth-child(1) a, .weg:nth-child(1) a  {
+  padding-top: 50vh !important;
+}
+
+.begin a {
+  animation-name: expandY;
+  animation-delay: 2.5s;
+  animation-duration: 0.4s;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  animation-fill-mode: forwards;
+}
+
+
+.drukhier img {
+  height: 4rem;
+}
+
+.drukhier {
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 200;
+
+
+}
+
+.drukhier img {
+  width: 4rem;
+}
+
+@supports (grid-area: auto) {
+  /* we weten hier: ondersteuning voor grid-layout */
+
+  @media (min-width: 750px) {
+
+
+header img {
+  height: 80vh;
+
+
+}
+.ik {
+  height: 95vh;
+  width: 95vh;
+  position: absolute;
+  bottom: 0;
+}
+
+header p {
+top: 31vh;
+}
+
+main div {
+padding: 10rem;
+}
+
+
+
+
+     }}
+
+     @media (min-width: 1100px) {
+
+
+
+header p {
+top: 36vh;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main div {
+padding: 1rem;
+}
+
+.quote {
+  padding: 10rem;
+}
+
+.quote h2 {
+  padding: 10rem;
+  text-align: center;
+}
+
+.onzichtbaar {
+      opacity: 1;
+}
+
+.ik {
+  height: 100vh; }
+
+     }

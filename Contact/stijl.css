@@ -1,0 +1,473 @@
+.onzichtbaar {
+  display: none;
+  transition: 1s;
+}
+
+h1 {
+color:  #bcdaac;
+font-size: 18rem;
+font-family: 'Limelight', cursive;
+position: absolute;
+z-index: 1;
+}
+
+body {
+  background-color: #f17cbd;
+}
+
+form {
+
+   width: 60vw;
+   margin: 50px auto;
+   padding: 50px;
+   z-index: 2;
+   position: relative;
+}
+
+
+
+label {
+   font-family: 'Montserrat', sans-serif;
+   margin: 10px 0;
+   display: block;
+   color: black;
+   font-size: 1.8em;
+
+}
+
+input[type="text"], input[type="email"], textarea {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.8em;
+   width: 40vw;
+   color: #333;
+   padding: 1rem;
+   padding-left: 1rem;
+   border: 0px;
+   border-bottom: solid black 2px;
+   background-color: rgba(255,255,255,0.7);
+}
+
+textarea {
+  height: 20vh;
+}
+
+
+input[type="submit"]  {
+   font-family: helvetica;
+   font-size: 2rem;
+   width: 40vw;
+   background-color: black;
+   padding: 8px 5px;
+   margin: 20px 0 0 0;
+   display: block;
+   color: white;
+   border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  transition: 1s;
+  background-color:  #98456e;
+}
+
+span {
+  display: block;
+}
+
+
+#antwoord {
+  width: 60vw;
+  margin: 50px auto;
+  padding: 50px;
+  z-index: 2;
+  position: relative;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 30vh;
+
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/* Menu */
+
+
+.begin:nth-child(1) {
+  background-color: #f17cbd;
+  height: 100vh;
+  grid-column: 1/9;
+  grid-row: 1/17;
+  animation-name: expandX;
+  animation-delay: 2s;
+  animation-duration: 0.4s;
+  transform-origin: right;
+  transform: scaleX(0);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  background-image: url(achtergrond.jpg);
+  background-size: cover;
+  background-blend-mode: screen;
+
+}
+
+.begin:nth-child(2) {
+  background-color: #98456e;
+  grid-row: 9/17;
+  grid-column: 9/17;
+  animation-name: expandY;
+  animation-delay: 1.6s;
+  animation-duration: 0.4s;
+  transform-origin: top;
+  transform: scaleY(0);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  background-image: url(ik.jpg);
+  background-size: cover;
+  background-blend-mode: screen;
+
+}
+
+.begin:nth-child(3) {
+  background-color: #bcdaac;
+  grid-row: 1/9;
+  grid-column: 9/13;
+  animation-name: expandX;
+  animation-delay: 1.2s;
+  animation-duration: 0.4s;
+  transform-origin: right;
+  transform: scaleX(0);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.begin:nth-child(4) {
+
+  background-color: #737d98;
+  grid-row: 4/9;
+  grid-column: 13/17;
+  animation-name: expandY;
+  animation-delay: 0.8s;
+  animation-duration: 0.4s;
+  transform-origin: top;
+  transform: scaleY(0);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+
+}
+
+.begin:nth-child(5) {
+  background-color: #f17cbd;
+  grid-row: 1/4;
+  grid-column: 13/15;
+  animation-name: expandX;
+  animation-delay: 0.4s;
+  animation-duration: 0.4s;
+  transform-origin: right;
+  transform: scaleX(0);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0.95;
+}
+
+.begin:nth-child(6) {
+  background-color: #98456e;
+  grid-column: 15/17;
+  grid-row: 1/4;
+  animation-name: expandX;
+  animation-duration: 0.4s;
+  transform-origin: right;
+  animation-timing-function: linear;
+}
+
+.begin:nth-child(7){
+  background-color: #bcdaac;
+  grid-column: 15/17;
+  grid-row: 3/4;
+  animation-name: expandX;
+  animation-duration: 0.4s;
+  transform-origin: top right;
+  animation-timing-function: linear;
+
+
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+
+
+@keyframes expandX {
+  0% { transform: scaleX(0);
+
+  }
+
+  100% {
+    transform: scaleX(1);
+
+  }
+
+}
+
+
+@keyframes expandY {
+  0% { transform: scaleY(0);
+
+  }
+
+  100% {
+    transform: scaleY(1);
+
+  }
+
+}
+
+.weg:nth-child(1) {
+  background-color: #f17cbd;
+  height: 100vh;
+  grid-column: 1/9;
+  grid-row: 1/17;
+  transform: scale(1);
+  animation-name: expandXWeg;
+  animation-delay: 2s;
+  animation-duration: 0.4s;
+  transform-origin: left;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  background-image: url(achtergrond.jpg);
+  background-size: cover;
+  background-blend-mode: screen;
+
+
+
+}
+
+.weg:nth-child(2) {
+  background-color: #98456e;
+  grid-row: 9/17;
+  grid-column: 9/17;
+  transform: scale(1);
+  animation-name: expandYWeg;
+  animation-delay: 1.6s;
+  animation-duration: 0.4s;
+  transform-origin: bottom;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  background-image: url(ik.jpg);
+  background-size: cover;
+  background-blend-mode: screen;
+
+
+}
+
+.weg:nth-child(3) {
+  background-color: #bcdaac;
+  grid-row: 1/9;
+  grid-column: 9/13;
+  transform: scale(1);
+  animation-name: expandXWeg;
+  animation-delay: 1.2s;
+  animation-duration: 0.4s;
+  transform-origin: left;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  z-index: 100;
+}
+
+.weg:nth-child(4) {
+  background-color: #737d98;
+  grid-row: 4/9;
+  grid-column: 13/17;
+  transform: scale(1);
+  animation-name: expandYWeg;
+  animation-delay: 0.8s;
+  animation-duration: 0.4s;
+  transform-origin: bottom;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+
+}
+
+.weg:nth-child(5) {
+  background-color: #f17cbd;
+  grid-row: 1/4;
+  grid-column: 13/15;
+  animation-name: expandXWeg;
+  animation-delay: 0.4s;
+  animation-duration: 0.4s;
+  transform-origin: left;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  transform: scale(1);
+    opacity: 0.95;
+
+}
+
+.weg:nth-child(6) {
+  background-color: #98456e;
+  grid-column: 15/17;
+  grid-row: 1/4;
+  transform: scale(1);
+  animation-name: expandXWeg;
+  animation-duration: 0.4s;
+  transform-origin: left;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+
+}
+
+.weg:nth-child(7){
+  background-color: #bcdaac;
+  grid-column: 15/17;
+  grid-row: 3/4;
+  transform: scale(1);
+  animation-name: expandXWeg;
+  animation-duration: 0.4s;
+  transform-origin: left;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+
+@keyframes expandXWeg {
+  0% { transform: scaleX(1);
+    z-index: 100;
+
+
+  }
+
+  100% {
+    transform: scaleX(0);
+      z-index: 0;
+
+
+  }
+
+}
+
+
+@keyframes expandYWeg {
+  0% { transform: scaleY(1);
+    z-index: 100;
+
+
+
+  }
+
+  100% {
+    transform: scaleY(0);
+      z-index: 0;
+
+
+  }
+
+}
+
+.vakje a {
+  display: none;
+}
+
+.begin a {
+  display: block;
+}
+.weg a {
+  display: block;
+}
+
+.zindex {
+  z-index: 100;
+}
+
+.zindexweg {
+  z-index: 100;
+  animation-name: zindex;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes zindex {
+  99% {
+    z-index: 100;
+  }
+  100% {
+
+    z-index: 0;
+  }
+
+}
+
+#menu a {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+text-align: center;
+font-size: 2rem;
+width: inherit;
+height: inherit;
+padding: 2rem;
+padding-top: 22vh;
+
+
+
+}
+#menu a:hover {
+  color:  #98456e;
+  transition: 1s;
+}
+
+.begin:nth-child(1) a, .weg:nth-child(1) a  {
+  padding-top: 50vh !important;
+}
+
+.begin a {
+  animation-name: expandY;
+  animation-delay: 2.5s;
+  animation-duration: 0.4s;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  animation-fill-mode: forwards;
+}
+
+.drukhier img {
+  height: 4rem;
+}
+
+.drukhier {
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 200;
+
+
+}
+
+.drukhier img {
+  width: 4rem;
+}
+
+@media (min-width: 1100px) {
+
+form {
+  margin-left: 40vw;
+  transition: 1s;
+}
+
+#antwoord {
+  margin-left: 40vw;
+
+}}
